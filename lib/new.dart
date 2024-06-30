@@ -34,13 +34,35 @@ class New extends StatelessWidget {
                   elevation: 2.5,
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: ClipRRect( borderRadius: BorderRadius.circular(20.0), child: Image.asset(products[index].image, fit: BoxFit.contain, width: 130, height: 130,)),
+                    child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          products[index].image,
+                          fit: BoxFit.cover,
+                          width: 130,
+                          height: 130,
+                        )),
                   ),
                 ),
-                Text(products[index].detail,style: TextStyle(fontSize: 12,fontFamily:'Nunito Sans',fontWeight: FontWeight.normal, ),),
+                Text(
+                  products[index].detail,
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontFamily: 'Nunito Sans',
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
                 Padding(
                   padding: const EdgeInsets.only(top: 8, bottom: 8),
-                  child: Text(products[index].price,style: TextStyle(fontSize: 17,fontFamily:'Raleway',fontWeight: FontWeight.bold, ) ,softWrap: true,),
+                  child: Text(
+                    products[index].price,
+                    style: TextStyle(
+                      fontSize: 17,
+                      fontFamily: 'Raleway',
+                      fontWeight: FontWeight.bold,
+                    ),
+                    softWrap: true,
+                  ),
                 )
               ],
             ),

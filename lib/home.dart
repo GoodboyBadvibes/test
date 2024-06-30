@@ -45,10 +45,10 @@ class Home extends StatelessWidget {
                   children: [
                     Text('Categories',style: TextStyle(fontSize: 21,fontFamily:'raleway',fontWeight: FontWeight.bold, ),),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text('See All',style: TextStyle(fontSize: 15,fontFamily:'raleway',fontWeight: FontWeight.bold, ),),
-                        Icon(Icons.arrow_circle_right,color: Color(0xff004cff),)
+               Icon(Icons.arrow_circle_right,color: Color(0xff004cff),)
                       ],
                     )
                   ],

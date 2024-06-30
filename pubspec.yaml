@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   carousel_slider: ^4.2.1
   flutter_carousel_widget: ^2.2.0
- # cache: ^0.0.4
+#  cache: ^0.0.4
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +64,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - lib/assets/
+    - lib/assets/fonts/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -76,7 +77,7 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
+  #fonts:
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
@@ -87,6 +88,17 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
+  fonts:
+    - family: Raleway
+      fonts:
+        - asset: lib/assets/fonts/Raleway-Regular.ttf
+        - asset: lib/assets/fonts/Raleway-Bold.ttf
+    - family: Nunito Sans
+      fonts:
+        - asset: lib/assets/fonts/NunitoSans_10pt-Bold.ttf
+        - asset: lib/assets/fonts/NunitoSans_10pt-Regular.ttf
+        - asset: lib/assets/fonts/NunitoSans_7pt-Bold.ttf
+        - asset: lib/assets/fonts/NunitoSans_7pt-Regular.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
