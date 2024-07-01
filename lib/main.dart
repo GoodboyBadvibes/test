@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:uitest/layout.dart';
+<<<<<<< HEAD
 import 'package:google_fonts/google_fonts.dart';
+=======
+// import 'package:google_fonts/google_fonts.dart';
+>>>>>>> cc51bdb648e518c9199ffbb20b04096e02d53711
 
 void main() {
   runApp(const MyApp());
@@ -38,4 +42,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

@@ -15,21 +15,21 @@ class Search extends StatelessWidget {
         borderRadius: BorderRadius.all(Radius.circular(10)),
         child: TextField(
           cursorHeight: 20,
-          style: TextStyle(
-            fontSize: 16,
-            fontFamily: 'raleway'
-          ),
+          style: TextStyle(fontSize: 16, fontFamily: 'raleway',),
           decoration: InputDecoration(
             filled: true,
             fillColor: Color(0xffdfe9ff),
             hintText: 'Search',
-            suffixIcon: Icon(Icons.camera_alt_outlined, size: 19.56,color: Color(0xff004cff),),
-            border: 
-            InputBorder.none,
+            suffixIcon: Icon(
+              Icons.camera_alt_outlined,
+              size: 19.56,
+              color: Color(0xff004cff),
+            ),
+            border: InputBorder.none,
             // OutlineInputBorder(
             //   borderRadius: BorderRadius.all(Radius.circular(8.0))
             // ),
-            contentPadding: EdgeInsets.all(10),
+            contentPadding: EdgeInsets.all(7),
           ),
         ),
       ),

@@ -26,7 +26,7 @@ class Popular extends StatelessWidget {
         itemBuilder: (context, index) {
           return Container(
             width: 120,
-            height: 140,
+            height: 150,
             child: Card(
               surfaceTintColor: Colors.white,
               child: Padding(
@@ -34,21 +34,37 @@ class Popular extends StatelessWidget {
                 child: Column(
                   children: [
                     ClipRRect(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
                         child: Image.asset(
-                      products[index].image,
-                      width: 140,
-                      height: 103,
-                      fit: BoxFit.contain,
-                    )),
+                          products[index].image,
+                          width: 140,
+                          height: 103,
+                          fit: BoxFit.contain,
+                        )),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Row(
-                          children: [Text(products[index].sold,style: TextStyle(fontSize: 15,fontFamily:'Raleway',fontWeight: FontWeight.bold, ) ,), Icon(Icons.favorite, size: 10.45, color: Color(0xff0042e0),)],
+                          children: [
+                            Text(
+                              products[index].sold,
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontFamily: 'Raleway',
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Icon(
+                              Icons.favorite,
+                              size: 10.45,
+                              color: Color(0xff0042e0),
+                            )
+                          ],
                         ),
-                        Text(products[index].status,style: TextStyle(fontSize: 13,fontFamily:'Raleway' ) ,),
-
+                        Text(
+                          products[index].status,
+                          style: TextStyle(fontSize: 13, fontFamily: 'Raleway'),
+                        ),
                       ],
                     )
                   ],
